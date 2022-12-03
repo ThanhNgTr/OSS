@@ -31,15 +31,7 @@ if (isset($_GET['admin']))
 		case 'xulyhd':
 			include("xulyhd.php");
 			break;
-		case 'hienthitt':
-			include("tintuc.php");
-			break;
-		case 'themtt':
-			include("them_tintuc.php");
-			break;
-		case 'suatt':
-			include("sua_tintuc.php");
-			break;
+
 		case 'hienthiht':
 			include("hotro.php");
 			break;

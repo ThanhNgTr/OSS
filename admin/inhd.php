@@ -22,31 +22,23 @@ $mahd = $_GET['mahd'];
                   <td width="5" height="95">&nbsp;</td>
                   <td width="343">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tbody>
+                        <tbody>
                         <tr>
-                          <td>
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                              <tbody>
-                                <tr>
-                                  <td colspan="2"><strong>CỬA HÀNG ĐIỆN THOẠI THÀNH ĐẠT</strong></td>
-                                </tr>
-                                <tr>
-                                  <td>Địa chỉ</td>
-                                  <td>: Xã An Thượng - Huyện Hoài Đức - Thành Phố Hà Nội</td>
-                                </tr>
-                                <tr>
-                                  <td width="65">Tel:</td>
-                                  <td>: 0424 666888</td>
-                                </tr>
-                                <tr>
-                                  <td>Di Động </td>
-                                  <td>: 0978164307</td>
-                                </tr>
-                                <tr>
-                                  <td>Email</td>
-                                  <td>:thanhdat21293@gmail.com</td>
-                                </tr>
-                              </tbody>
+                            <td colspan="2"><strong>CỬA HÀNG THIẾT BỊ ĐIỆN TỬ N14</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ</td>
+                            <td>: 2 - NGUYỄN ĐÌNH CHIỂU -  VĨNH THỌ - NHA TRANG - KHÁNH HÒA</td>
+                        </tr>
+                        <tr>
+                            <td width="65">Tel:</td>
+                            <td>: 0200 9378 433</td>
+                        </tr>
+                        <tr>
+                            <td>Di Động </td>
+                            <td>: 0935948955</td>
+                        </tr>
+                        </tbody>
                             </table>
                           </td>
                         </tr>

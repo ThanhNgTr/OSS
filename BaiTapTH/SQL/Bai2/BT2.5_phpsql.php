@@ -49,7 +49,7 @@ $result = mysqli_query($conn, $strSQL);
     </tr>
     <?php while ($row = mysqli_fetch_array($result)) :?>
         <tr>
-            <td><img src="Anh_Sua/<?php $row["Hinh"] ?> width="100%"></td>
+            <td><img src="./BaiTapTH/SQL/Bai2/Anh_Sua/<?php echo $row['Hinh'] ?>" width="50%"></td>
 
 
             <td width="200px">

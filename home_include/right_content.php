@@ -71,7 +71,15 @@ $tongtien+=$_SESSION['cart'][$row['idsp']]*$row['gia'];
 							
 
           
-					<?php } ?>		
+					<?php } ?>
+
+
+                        <?php if(isset($_SESSION['idnd']))
+                        {?>
+                            <a href="index.php?content=showcart&id=<?php echo $_SESSION['idnd']?>"><p style="color: blue">Xem giỏ hàng của bạn</p></a>
+                        <?php
+                        }
+                        ?>
 							
 					</div><!-- End .center1-->
 				</div><!-- End .giohang-->

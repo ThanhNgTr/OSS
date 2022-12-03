@@ -67,6 +67,12 @@
             case "chanp":
                 include ('./nhancode.php');
                 break;
+            case "showcart":
+                include ('./showcart.php');
+                break;
+            case "showct":
+                include ('./showchitiet.php');
+                break;
 		}
 
 	} elseif (isset($_GET['madm'])) {

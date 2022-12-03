@@ -19,10 +19,10 @@ $i=0;
                 <br>
                 <?php echo  $item['Trong_luong'] . '-' . $item['Don_gia'].' VND' ?>
                 <br>
-                <img src="thuan/Hinh_sua/<?php echo $item['Hinh'] ?> "width="200px" height="200px">
+                <img src="./BaiTapTH/SQL/Bai2/Anh_Sua/<?php echo $item['Hinh'] ?> "width="180px" height="180px">
             </td>
 
-            <?php if ($i==4) {echo '</tr>';$i=0;}?>
+            <?php if ($i==3) {echo '</tr>';$i=0;}?>
         <?php endforeach;?>
 
     <?php endif;?>

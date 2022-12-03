@@ -45,10 +45,6 @@ if (mysqli_num_rows($result)<>0)
     }
     echo "</table>";
 }
-
-
 ?>
-
-
 <?php mysqli_close($conn) ?>
 

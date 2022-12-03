@@ -69,8 +69,7 @@ mysqli_close($conn);
         <?php foreach ($result as $item ) :?>
             <tr>
                 <td>
-                    <img src="./thuan/Hinh_sua/<?php echo $item['Hinh'] ?> " alt=""  srcset="">
-
+                    <img src="./BaiTapTH/SQL/Bai2/Anh_Sua/<?php echo $item['Hinh'] ?> " alt=""  srcset="">
                 </td>
                 <td>
                     <strong> Thanh phan dinh duong</strong>

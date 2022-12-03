@@ -1,4 +1,4 @@
-<base href="http://localhost/rename/" />
+<base href="http://localhost/OSS/" />
 <?php
 session_start();
 include("include/connect.php"); ?>

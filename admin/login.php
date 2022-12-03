@@ -34,7 +34,7 @@ if (isset($_SESSION['username'])) {
             else {
                 while ($rows = mysqli_fetch_array($row)) {
                     $_SESSION['username'] = $username;
-                    $_SESSION['phanquyen'] = $row['phanquyen'];
+                    $_SESSION['phanquyen'] = $rows['phanquyen'];
                     $_SESSION['idnd'] = $row['idnd'];
                     if ($rows['phanquyen'] == 0) {
                         echo "
