@@ -1,3 +1,4 @@
 Chào buổi tối cả nhà :))
 push lên git đi ae
+NC push code admin
 
