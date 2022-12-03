@@ -26,7 +26,7 @@ $i=0;
                 <br>
                 <?php echo  $item['Trong_luong'] . '-' . $item['Don_gia'].' VND' ?>
                 <br>
-                <img src="thuan/Hinh_sua/<?php echo $item['Hinh'] ?> "width="100px" height="100px">
+                <img src=./BaiTapTH/SQL/Bai2/Anh_Sua/<?php echo $item['Hinh'] ?> "width="100px" height="100px">
             </td>
 
             <?php if ($i==4) {echo '</tr>';$i=0;}?>

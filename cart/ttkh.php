@@ -93,7 +93,7 @@
 			</tr>
 			<tr align="center" id="row_dim">
 				<td colspan="2">
-					<img src="/dienthoai/img/tknh.jpg" alt="Lamp" width="300">
+					<img src="./img/tknh.jpg" alt="Lamp" width="200">
 				</td>
 			</tr>
 			<tr>

@@ -21,6 +21,7 @@ include("../include/connect.php");
 	<div id="wapper">
 		<div id="header">
 			<div id="lg-header">
+                <img src="img/logo-header.png" width="100%">
 				<h1><a href="../index.php">Logo</a></h1>
 			</div><!-- End .bg-lg-header -->
 			<div id="bg-header">
@@ -41,7 +42,6 @@ include("../include/connect.php");
 								<li><a href="?admin=hienthidm"> Quản lý danh mục</a></li>
 								<li><a href="?admin=hienthihd"> Quản lý hóa đơn</a></li>
 								<li><a href="?admin=hienthind"> Quản lý người dùng</a></li>
-								<li><a href="?admin=hienthitt"> Quản lý tin tức</a></li>
 								<li><a href="?admin=hienthiht"> Quản lý hỗ trợ</a></li>
 							</ul>
 						</div><!-- End .center -->

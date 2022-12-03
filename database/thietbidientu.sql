@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 01, 2022 at 06:51 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th12 03, 2022 lúc 04:33 PM
+-- Phiên bản máy phục vụ: 10.4.24-MariaDB
+-- Phiên bản PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dienthoai`
+-- Cơ sở dữ liệu: `thietbidientu`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chitiethoadon`
+-- Cấu trúc bảng cho bảng `chitiethoadon`
 --
 
 CREATE TABLE `chitiethoadon` (
@@ -37,7 +37,7 @@ CREATE TABLE `chitiethoadon` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `chitiethoadon`
+-- Đang đổ dữ liệu cho bảng `chitiethoadon`
 --
 
 INSERT INTO `chitiethoadon` (`mahd`, `tensp`, `soluong`, `gia`, `phuongthucthanhtoan`, `id_hdct`) VALUES
@@ -54,7 +54,7 @@ INSERT INTO `chitiethoadon` (`mahd`, `tensp`, `soluong`, `gia`, `phuongthucthanh
 -- --------------------------------------------------------
 
 --
--- Table structure for table `danhmuc`
+-- Cấu trúc bảng cho bảng `danhmuc`
 --
 
 CREATE TABLE `danhmuc` (
@@ -64,7 +64,7 @@ CREATE TABLE `danhmuc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `danhmuc`
+-- Đang đổ dữ liệu cho bảng `danhmuc`
 --
 
 INSERT INTO `danhmuc` (`madm`, `tendm`, `dequi`) VALUES
@@ -91,7 +91,7 @@ INSERT INTO `danhmuc` (`madm`, `tendm`, `dequi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hoadon`
+-- Cấu trúc bảng cho bảng `hoadon`
 --
 
 CREATE TABLE `hoadon` (
@@ -106,21 +106,21 @@ CREATE TABLE `hoadon` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `hoadon`
+-- Đang đổ dữ liệu cho bảng `hoadon`
 --
 
 INSERT INTO `hoadon` (`mahd`, `idnd`, `hoten`, `diachi`, `dienthoai`, `email`, `ngaydathang`, `trangthai`) VALUES
 (21, 5, 'quang1811', 'bruh', 904982431, 'quanghongnguyen115@gmail.com', '2022-12-01', 1),
 (22, 5, 'quang1811', 'bruh', 904982431, 'quanghongnguyen115@gmail.com', '2022-12-01', 1),
 (23, 0, '223423', 'asdasd', 324234, '2342', '2022-12-01', 1),
-(24, 6, 'aaafsdfsfv vdgdg', 'huuuh', 972341193, 'r@gmail.com', '2022-12-01', 1),
+(24, 6, 'aaafsdfsfv vdgdg', 'huuuh', 972341193, 'r@gmail.com', '2022-12-01', 4),
 (25, 6, 'aaafsdfsfv vdgdg', 'q', 972341193, 'r@gmail.com', '2022-12-01', 1),
 (26, 0, 'wdqw', 'qwdqw', 235235, '2352', '2022-12-01', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hotro`
+-- Cấu trúc bảng cho bảng `hotro`
 --
 
 CREATE TABLE `hotro` (
@@ -136,7 +136,7 @@ CREATE TABLE `hotro` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nguoidung`
+-- Cấu trúc bảng cho bảng `nguoidung`
 --
 
 CREATE TABLE `nguoidung` (
@@ -154,19 +154,17 @@ CREATE TABLE `nguoidung` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `nguoidung`
+-- Đang đổ dữ liệu cho bảng `nguoidung`
 --
 
 INSERT INTO `nguoidung` (`idnd`, `tennd`, `username`, `password`, `ngaysinh`, `gioitinh`, `email`, `dienthoai`, `diachi`, `ngaydangky`, `phanquyen`) VALUES
-(3, 'administrator', 'admin', '21232f297a57a5a743894a0e4a801fc3', '2014-05-02', 'nam', 'thanhdat21293@gmail.com', '978164307', 'an thuong', '2014-05-26', 0),
-(4, 'Thành Đạt', 'thanhdat21293', '96e79218965eb72c92a549dd5a330112', '1993-12-02', 'nam', 'thanhdat21293@gmail.com', '978164307', 'an thượng', '2014-06-01', 1),
 (5, 'quang1811', 'quang1811', '21e04072a37d8f29f992b14233a4b26c', '2001-11-18', 'nam', 'quanghongnguyen115@gmail.com', '904982431', 'bruh', '2022-12-01', 1),
-(6, 'aaafsdfsfv vdgdg', 'admin1', 'e10adc3949ba59abbe56e057f20f883e', '0000-00-00', '', 'r@gmail.com', '972341193', '', '2022-12-01', 1);
+(7, 'ThanhProNE', 'thanh123', 'e10adc3949ba59abbe56e057f20f883e', '2001-04-15', 'nam', 'trongthanh1562@gmail.com', '0935948955', 'Cam THanh Bac Cam Lam', '2022-12-03', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nhasx`
+-- Cấu trúc bảng cho bảng `nhasx`
 --
 
 CREATE TABLE `nhasx` (
@@ -179,7 +177,7 @@ CREATE TABLE `nhasx` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sanpham`
+-- Cấu trúc bảng cho bảng `sanpham`
 --
 
 CREATE TABLE `sanpham` (
@@ -199,7 +197,7 @@ CREATE TABLE `sanpham` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `sanpham`
+-- Đang đổ dữ liệu cho bảng `sanpham`
 --
 
 INSERT INTO `sanpham` (`idsp`, `tensp`, `hinhanh`, `mau`, `chitiet`, `soluong`, `daban`, `gia`, `khuyenmai1`, `khuyenmai2`, `madm`, `ngaycapnhat`, `trangthai`) VALUES
@@ -321,7 +319,7 @@ INSERT INTO `sanpham` (`idsp`, `tensp`, `hinhanh`, `mau`, `chitiet`, `soluong`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tintuc`
+-- Cấu trúc bảng cho bảng `tintuc`
 --
 
 CREATE TABLE `tintuc` (
@@ -336,105 +334,105 @@ CREATE TABLE `tintuc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `chitiethoadon`
+-- Chỉ mục cho bảng `chitiethoadon`
 --
 ALTER TABLE `chitiethoadon`
   ADD PRIMARY KEY (`id_hdct`);
 
 --
--- Indexes for table `danhmuc`
+-- Chỉ mục cho bảng `danhmuc`
 --
 ALTER TABLE `danhmuc`
   ADD PRIMARY KEY (`madm`);
 
 --
--- Indexes for table `hoadon`
+-- Chỉ mục cho bảng `hoadon`
 --
 ALTER TABLE `hoadon`
   ADD PRIMARY KEY (`mahd`);
 
 --
--- Indexes for table `hotro`
+-- Chỉ mục cho bảng `hotro`
 --
 ALTER TABLE `hotro`
   ADD PRIMARY KEY (`idht`);
 
 --
--- Indexes for table `nguoidung`
+-- Chỉ mục cho bảng `nguoidung`
 --
 ALTER TABLE `nguoidung`
   ADD PRIMARY KEY (`idnd`);
 
 --
--- Indexes for table `nhasx`
+-- Chỉ mục cho bảng `nhasx`
 --
 ALTER TABLE `nhasx`
   ADD PRIMARY KEY (`idnsx`);
 
 --
--- Indexes for table `sanpham`
+-- Chỉ mục cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
   ADD PRIMARY KEY (`idsp`);
 
 --
--- Indexes for table `tintuc`
+-- Chỉ mục cho bảng `tintuc`
 --
 ALTER TABLE `tintuc`
   ADD PRIMARY KEY (`matt`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `chitiethoadon`
+-- AUTO_INCREMENT cho bảng `chitiethoadon`
 --
 ALTER TABLE `chitiethoadon`
   MODIFY `id_hdct` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `danhmuc`
+-- AUTO_INCREMENT cho bảng `danhmuc`
 --
 ALTER TABLE `danhmuc`
   MODIFY `madm` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- AUTO_INCREMENT for table `hoadon`
+-- AUTO_INCREMENT cho bảng `hoadon`
 --
 ALTER TABLE `hoadon`
   MODIFY `mahd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT for table `hotro`
+-- AUTO_INCREMENT cho bảng `hotro`
 --
 ALTER TABLE `hotro`
   MODIFY `idht` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `nguoidung`
+-- AUTO_INCREMENT cho bảng `nguoidung`
 --
 ALTER TABLE `nguoidung`
-  MODIFY `idnd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idnd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `nhasx`
+-- AUTO_INCREMENT cho bảng `nhasx`
 --
 ALTER TABLE `nhasx`
   MODIFY `idnsx` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `sanpham`
+-- AUTO_INCREMENT cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
   MODIFY `idsp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 
 --
--- AUTO_INCREMENT for table `tintuc`
+-- AUTO_INCREMENT cho bảng `tintuc`
 --
 ALTER TABLE `tintuc`
   MODIFY `matt` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;

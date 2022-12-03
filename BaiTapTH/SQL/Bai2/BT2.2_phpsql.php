@@ -38,9 +38,9 @@ $result = mysqli_query($conn, $strSQL);
             <td><?php echo $row["Ma_khach_hang"] ?> </td>
             <td><?php echo $row["Ten_khach_hang"] ?> </td>
             <td ><?php  if($row["Phai"]==0)
-                            echo "<img width='50px' src='./Anh/man.png'>";
+                            echo "<img width='50px' src='./BaiTapTH/SQL/Bai2/Anh/man.png'>";
                         else
-                            echo  "<img width='50px' src='./Anh/woman.png'>";
+                            echo  "<img width='50px' src='./BaiTapTH/SQL/Bai2/Anh/woman.png'>";
                 ?> </td>
             <td><?php echo $row["Dia_chi"] ?> </td>
             <td><?php echo $row["Dien_thoai"] ?> </td>
