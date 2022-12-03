@@ -12,8 +12,12 @@ $dem = mysqli_num_rows($query);
 	<form action="admin.php?admin=xulyhd" method="post">
 		<div id="check">
 			<p>
+
 				<input type="submit" name="xacnhan" value="Xác nhận" />
                 <input type="submit" name="giaohang" value="Đã giao"  size="30"/>
+
+				<input type="submit" name="giaohang" value="Đã giao hàng" />
+ main
 				<input type="submit" name="huy" value="Hủy" />
 				<input type="submit" name="xoa" value="Xóa" />
 			</p>
@@ -57,7 +61,9 @@ $dem = mysqli_num_rows($query);
 			<td class="sl_hienthi_sp"><?php echo $bien['email'] ?></td>
 			<td class="sl_hienthi_sp"><?php if ($bien['trangthai'] == 1) echo "Đang xử lý";
 										else if ($bien['trangthai'] == 2) echo "Đã giao hàng";
+
                                         else if ($bien['trangthai'] == 4) echo "Xác nhận";
+
 
 										else echo "Đã hủy đơn hàng"; ?></td>
 			<td class="active_hienthi_sp" style="width:70px;"><a href="admin.php?admin=chitiethoadon&mahd=<?php echo $bien['mahd']; ?> " style="float:left;">Chi tiết</a>

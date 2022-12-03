@@ -77,8 +77,8 @@ function taomadm($bang,$truongma,$kytudungdau='')
 	$tam=0;
 	$stt=0;
 	$len_kt=strlen($kytudungdau);
-	$result = mysqli_query($sql,$link);
-	while($row=mysqli_fetch_array($result))
+	$result = mysql_query($sql,$link);
+	while($row=mysql_fetch_array($result))
 	{
 		$stt++;
 		$Ma[$stt]=$row["$truongma"];
@@ -113,7 +113,7 @@ function taomadm($bang,$truongma,$kytudungdau='')
 				else
 					$sau=$kytudungdau.'00001';
 			 return ($sau);
-		 mysqli_close();
+		 mysql_close();
 }
 
 //********************************************************
@@ -126,8 +126,8 @@ function identity_int($bang,$truongma)
 	$tam=0;
 	$stt=0;
 	$len_kt=strlen($kytudungdau);
-	$result = mysqli_query($sql,$link);
-	while($row=mysqli_fetch_array($result))
+	$result = mysql_query($sql,$link);
+	while($row=mysql_fetch_array($result))
 	{
 		$stt++;
 		$Ma[$stt]=$row["$truongma"];
@@ -136,7 +136,7 @@ function identity_int($bang,$truongma)
 		  $tam1=$Ma[$stt-1];
 		  	if($tam1>$tam) $tam=$tam1;		
 	}
-	mysqli_close();
+	mysql_close();
 		 $tam++;
 			 return ($tam);
 		 
@@ -151,8 +151,8 @@ function taoma($bang,$truongma)
 	require("dbcon.inc");
 	$sql="select * from $bang order by $truongma";
 	$tam=0;
-	$result = mysqli_query($sql,$link);
-	while($row=mysqli_fetch_array($result))
+	$result = mysql_query($sql,$link);
+	while($row=mysql_fetch_array($result))
 	{
 		$Ma=$row["$truongma"];
 		if ($tam<$Ma)
@@ -162,7 +162,7 @@ function taoma($bang,$truongma)
 	}
 			$i=$tam+1;
 			 return ($i);
-		 mysqli_close();
+		 mysql_close();
 }
 //********************************************************
 //[Creator]   : AnhPT
@@ -352,10 +352,10 @@ require("dbcon.inc");
 	
 $sql___="SELECT $field_ten FROM $table WHERE $field_ma='$value_ma' $where___";
 //echo $sql___;
-$result______=mysqli_query($sql___,$link);
-if(mysqli_num_rows($result______)!=0)
+$result______=mysql_query($sql___,$link);
+if(mysql_num_rows($result______)!=0)
 	{
-		while($row______=mysqli_fetch_object($result______))
+		while($row______=mysql_fetch_object($result______))	
 		{	$ten=$row______->$field_ten; }
 		
 	}
@@ -363,5 +363,6 @@ if(mysqli_num_rows($result______)!=0)
 }
 //********************************************************
 ?>
+
 
 

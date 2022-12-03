@@ -1,15 +1,10 @@
 ﻿<?php
 session_start();
-if(isset($_SESSION['username']))
-{
-
-
-    if($_SESSION['phanquyen']==1)
-    {
+if (isset($_SESSION['username'])) {
+    if ($_SESSION['phanquyen'] == 1) {
         header("location:../index.php");
     }
-    if($_SESSION['phanquyen']==0)
-    {
+    if ($_SESSION['phanquyen'] == 0) {
         header("location:admin.php");
     }
 }
@@ -23,45 +18,32 @@ if(isset($_SESSION['username']))
     </div>
     <?php
     include("../include/connect.php");
-
-    if(isset($_POST['login']))
-    {
+    if (isset($_POST['login'])) {
         $username = $_POST['user'];
         $password = MD5($_POST['pass']);
-        $sql_check = mysqli_query($link,"select * from nguoidung where username = '$username'");
+        $sql_check = mysqli_query($link, "select * from nguoidung where username = '$username'");
         $dem = mysqli_num_rows($sql_check);
-        if($dem == 0)
-        {
+        if ($dem == 0) {
             echo "<p class='thongbao1'>Tài khoản không tồn tại</p>";
-        }
-        else
-        {
+        } else {
             $sql_check2 = "select * from nguoidung where username = '$username' and password = '$password'";
-            $row=mysqli_query($link,$sql_check2);
+            $row = mysqli_query($link, $sql_check2);
             $dem2 = mysqli_num_rows($row);
-            if($dem2 == 0)
+            if ($dem2 == 0)
                 echo "<p class='thongbao1'>Mật khẩu không chính xác</p>";
-            else
-            {
-
-                while($rows = mysqli_fetch_array($row))
-                {
+            else {
+                while ($rows = mysqli_fetch_array($row)) {
                     $_SESSION['username'] = $username;
                     $_SESSION['phanquyen'] = $row['phanquyen'];
                     $_SESSION['idnd'] = $row['idnd'];
-                    if($rows['phanquyen'] == 0)
-                    {
-
+                    if ($rows['phanquyen'] == 0) {
                         echo "
 							<script language='javascript'>
 								alert('Đăng nhập quản trị thành công');
 								window.open('admin.php','_self', 1);
 							</script>
 						";
-                    }
-                    else
-                    {
-
+                    } else {
                         header('location:../index.php');
                     }
                 }
